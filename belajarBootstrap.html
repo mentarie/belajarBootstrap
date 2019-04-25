@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <!-- FIXED nanti dia ada di atas, tapi untuk yang paling atas, dia makan juga tempatnya (nutupin) -->
+    <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Logo</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+            </li>
+        </ul>
+    </nav> -->
+
+    <!-- STICKY nanti dia sticky dari atas, ga makan space, dan ketika di scroll down, dia jadi relative tampilannya -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <a class="navbar-brand" href="#">Logo</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- CAROUSEL slide gambar -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="https://blog.flyspaces.com/hubfs/Jakarta%20city.jpg" alt="Los Angeles" width="1200" height="500">
+            <div class="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>We had such a great time in LA!</p>
+            </div>   
+            </div>
+            <div class="carousel-item">
+            <img src="https://i.pinimg.com/originals/a0/b8/09/a0b80992de8a9f5f3141adab32353b21.jpg" alt="Chicago" width="1200" height="500">
+            <div class="carousel-caption">
+                <h3>Chicago</h3>
+                <p>Thank you, Chicago!</p>
+            </div>   
+            </div>
+            <div class="carousel-item">
+            <img src="https://images3.alphacoders.com/173/173665.jpg" alt="New York" width="1200" height="500">
+            <div class="carousel-caption">
+                <h3>New York</h3>
+                <p>We love the Big Apple!</p>
+            </div>   
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <br>
+
+    <!-- IMAGE dalam kolom kolom-->
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+        <!-- <h3>Column 1</h3> -->
+        <img src="https://i.pinimg.com/originals/4e/92/36/4e9236316ee767521f6ab1aaec430048.jpg" style="width:350px;height:300px">
+        </div>
+        <div class="col-sm-4">
+        <!-- <h3>Column 2</h3> -->
+        <img src="https://wallpaperaccess.com/full/184535.jpg" style="width:350px;height:300px">
+        </div>
+        <div class="col-sm-4">
+        <!-- <h3>Column 3</h3> -->
+        <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2011/10/NYC_Times_Square.jpg" style="width:350px;height:300px">
+        </div>
+    </div>
+    </div>
+    <br>
+
+    <!-- CARDS -->
+    <div class="container">
+        <div class="card-deck">
+            <div class="card bg-primary">
+            <div class="card-body text-center">
+                <img src="https://i.pinimg.com/originals/68/a6/ad/68a6ada2b83c61053af2d025a856c19c.jpg" style="width:100px;height:150px;border-radius:50%">
+               <br>
+               <p style="color:white">Allecia Carra</p>
+                <a href="#" class="btn btn-danger stretched-link">See Profile</a>
+            </div>
+            </div>
+            <div class="card bg-warning">
+            <div class="card-body text-center">
+                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" style="width:100px;height:150px;border-radius:50%">
+                <br>
+                <p style="color:white">Stephen Black</p>
+                <a href="#" class="btn btn-success stretched-link">See Profile</a>
+            </div>
+            </div>
+            <div class="card bg-success">
+            <div class="card-body text-center">
+                <img src="http://www.face-agency.co.uk/images/uploads/models/large/1470043879-21.jpg" style="width:100px;height:150px;border-radius:50%"> 
+                <br>
+                <p style="color:white">Hans Christian</p>
+                <a href="#" class="btn btn-warning stretched-link">See Profile</a>
+            </div>
+            </div>
+            <div class="card bg-danger">
+            <div class="card-body text-center">
+                <img src="https://i.pinimg.com/originals/c5/37/7d/c5377d07e968f308ba897bfb7e56b0d2.jpg" style="width:100px;height:150px;border-radius:50%">
+                <br>
+                <p style="color:white">Nararia Leaf</p>
+                <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+            </div>
+            </div>  
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
